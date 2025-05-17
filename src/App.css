@@ -172,9 +172,10 @@ body, html, #root, .App {
 }
 
 .project-info p {
-  color: #666;
+  color: #1E1E23;
   margin-bottom: 0;
   line-height: 1.6;
+  font-size:1.2rem;
 }
 .project-image {
   position: relative;

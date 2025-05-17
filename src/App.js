@@ -4,19 +4,19 @@ import ProjectCard from "./ProjectCard";
 const projects = [
   {
     title: "E-Commerce Clothing Website",
-    description: "Built the Express.js & Django Backend, Along with the Go Middleware",
+    description: "Built the Express.js & Django Backend using GraphQL API Architecture, Along with the Go Middleware",
     images: ["/clothing3.png", "/clothing2.png", "/clothing.png"],
     link: "https://github.com/codingishard444/Thrift_Backend"
   },
   {
     title: "Villa Rental Website",
-    description: "Built the Spring Boot Backend with Additional Security Features",
+    description: "Built the Spring Boot Backend using REST API Architecture with Additional Security Features",
     images: ["/villa_rental.png", "/villa2.png"],
     link: "https://github.com/ghjknehbor/Non-Relational-Backend"
   },
   {
-    title: "Custom AI chatbot for customer service",
-    description: "Trained an LLM using Unsloth and Google Colab's T4 GPU for customer service",
+    title: "Custom AI chatbot for customer service & Webhook Integration",
+    description: "Trained an LLM using Unsloth and Google Colab's T4 GPU, Deployed it in public API and Integrated with Webhooks ",
     images: ["/chatbot.png"],
     link: "https://colab.research.google.com/drive/1LghtBSVPbN4qqIF9XnFp1zuIfiv02_9E?usp=sharing"
   }
@@ -28,8 +28,8 @@ function App() {
       <nav className="navbar">
         <div className="nav-left">
           <a href="#work" className="nav-link active">Work</a>
-          <a href="#contact" className="nav-link">Contact</a>
-          <a href="#skills" className="nav-link">Skills</a>
+          <a href="https://www.linkedin.com/in/bryant-gabriel-effendi-14b647300/" className="nav-link">LinkedIn</a>
+          <a href="https://github.com/codingishard444" className="nav-link">Github</a>
         </div>
       </nav>
 
