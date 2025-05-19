@@ -42,9 +42,47 @@ function App() {
     {/* Transition Image Section */}
       <div className="projects-transition"></div>
       {/* Project Showcase Section */}
+      <section class="skills">
+        <h2>Skills</h2>
+        <p>Here are some of my skills and my familiarity with them:</p>
+
+        <div class="skills-grid">
+          <div class="skill">
+            <span>Backend Development (Node.js,Spring Boot)</span>
+            <div class="progress-bar"><div style={{ width: "90%" }}></div></div>
+            <span class="percent">90%</span>
+          </div>
+          <div class="skill">
+            <span>Docker Architecture(For Deployment)</span>
+            <div class="progress-bar"><div style={{ width: "70%" }}></div></div>
+            <span class="percent">70%</span>
+          </div>
+          <div class="skill">
+            <span>Frontend Development (React.js)</span>
+            <div class="progress-bar"><div style={{ width: "65%" }}></div></div>
+            <span class="percent">65%</span>
+          </div>
+          <div class="skill">
+            <span>Middleware Development (Golang)</span>
+            <div class="progress-bar"><div style={{ width: "70%" }}></div></div>
+            <span class="percent">70%</span>
+          </div>
+          <div class="skill">
+            <span>Database Management (MongoDB & MySQL)</span>
+            <div class="progress-bar"><div style={{ width: "80%" }}></div></div>
+            <span class="percent">80%</span>
+          </div>
+          <div class="skill">
+            <span>AI Training & Deployment (Unsloth)</span>
+            <div class="progress-bar"><div style={{ width: "55%" }}></div></div>
+            <span class="percent">55%</span>
+          </div>
+        </div>
+      </section>
       <section id="work" className="projects-section">
         <h2 className="section-title">My Projects</h2>
-        <div className="projects-container">
+        <h2 className="section-subtitle">Real-world backend solutions with modern architectures</h2>
+        <div className="features-container">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

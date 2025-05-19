@@ -3,6 +3,7 @@ body, html, #root, .App {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #1E1E23;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -121,10 +122,14 @@ body, html, #root, .App {
 
 .section-title {
   font-size: 2.5rem;
-  color: #1E1E23;
+  color: #ffffff;
   margin-bottom: 3rem;
 }
-
+.section-subtitle {
+  color: #555; /* change this to any color you want */
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -204,4 +209,147 @@ body, html, #root, .App {
 
 .nav-btn.right {
   right: 10px;
+}
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+}
+
+.feature-card {
+  width: 100%;
+  height: 250px; /* Adjust as needed */
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  color: #1E1E23;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+.feature-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.feature-card-link:visited,
+.feature-card-link:active,
+.feature-card-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.feature-title {
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.feature-title h3 {
+  color: #555; /* change this to any color you want */
+  font-size: 1.45rem;
+  margin-top: 0.5rem;
+}
+.skills {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background: #1E1E23;
+  font-family: Arial, sans-serif;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  color:white
+}
+
+.skills h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0daae9;
+  margin-top: 10px;
+}
+
+.skills p {
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.skill span {
+  font-size: 1.01rem;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #d9dddf;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress-bar div {
+  height: 100%;
+  background: #0daae9;
+  border-radius: 5px 0 0 5px;
+}
+
+.percent {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #111;
 }
